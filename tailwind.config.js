@@ -8,6 +8,10 @@ module.exports = {
     './components/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
+    screens: {
+      mdh: { max: '767px' },
+      ...defaultTheme.screens,
+    },
     fontFamily: {
       Antonio: ['Antonio', ...defaultTheme.fontFamily.sans],
       Spartan: ['League-Spartan', ...defaultTheme.fontFamily.sans],
