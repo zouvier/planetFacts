@@ -2,7 +2,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect } from 'react';
 import Footer from '../components/Footer';
 
 const Home = () => {
@@ -15,13 +15,15 @@ const Home = () => {
   const [layerimages, setLayerimages] = useState({ image: '', geo: false });
   const colors = ['focus:bg-planet-aquablue focus:border-planet-aquablue', 'focus:bg-planet-gold focus:border-planet-gold', 'focus:bg-planet-purple focus:border-planet-purple', 'focus:bg-planet-orange1 focus:border-planet-orange1', 'focus:bg-planet-orange2 focus:border-planet-orange2', 'focus:bg-planet-orange3 focus:border-planet-orange3', 'focus:bg-planet-aquagreen focus:border-planet-aquagreen', 'focus:bg-planet-blue focus:border-planet-blue'];
   const possiblelayers = { overview: [planetinfo?.overview?.content, planetinfo?.overview?.source], structure: [planetinfo?.structure?.content, planetinfo?.structure?.source], geology: [planetinfo?.geology?.content, planetinfo?.geology?.source] };
-  const firstUpdate = useRef(true);
 
   useEffect(() => {
-    if (firstUpdate === true) {
-      firstUpdate.current = false;
-    }
-  }, [firstUpdate]);
+    // Always do navigations after the first render
+    router.push('/?planet=mercury&number=0', undefined, { shallow: true });
+  }, []);
+
+  useEffect(() => {
+    // The counter changed!
+  }, [router.query]);
 
   useEffect(() => {
     (async () => {
