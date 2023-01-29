@@ -14,28 +14,28 @@ const Navbar = () => {
     <nav className="flex items-center flex-wrap bg-planet-dark text-planet-lightgray z-10 relative  p-3 px-10 justify-between border-b-2 border-planet-lightgray">
       <Link href="/" alt="home"><h1 className="no-underline font-Antonio uppercase text-head2 text-planet-white">The Planets</h1> </Link>
       <div className="flex gap-4 mdh:hidden">
-        <Link href={{ pathname: '/', query: planet }} alt="" className="hover:text-planet-white focus:text-planet-white border-t-4 border-transparent hover:border-planet-aquablue focus:border-planet-aquablue">
+        <Link href={{ pathname: '/', query: planet }} alt="Mercury" className="hover:text-planet-white focus:text-planet-white border-t-4 border-transparent hover:border-planet-aquablue focus:border-planet-aquablue">
           <h2 onMouseEnter={() => setPlanet({ planet: 'mercury', number: 0 })}>Mercury</h2>
         </Link>
-        <Link href={{ pathname: '/', query: planet }} alt="" className="hover:text-planet-white focus:text-planet-white border-t-4 border-transparent  hover:border-planet-gold focus:border-planet-gold">
+        <Link href={{ pathname: '/', query: planet }} alt="Venus" className="hover:text-planet-white focus:text-planet-white border-t-4 border-transparent  hover:border-planet-gold focus:border-planet-gold">
           <h2 onMouseEnter={() => setPlanet({ planet: 'venus', number: 1 })}>Venus</h2>
         </Link>
-        <Link href={{ pathname: '/', query: planet }} alt="" className="hover:text-planet-white focus:text-planet-white border-t-4 border-transparent hover:border-planet-purple focus:border-planet-purple">
+        <Link href={{ pathname: '/', query: planet }} alt="Earth" className="hover:text-planet-white focus:text-planet-white border-t-4 border-transparent hover:border-planet-purple focus:border-planet-purple">
           <h2 onMouseEnter={() => setPlanet({ planet: 'earth', number: 2 })}>Earth</h2>
         </Link>
-        <Link href={{ pathname: '/', query: planet }} alt="" className="hover:text-planet-white focus:text-planet-white border-t-4 border-transparent hover:border-planet-orange1 focus:border-planet-orange1">
+        <Link href={{ pathname: '/', query: planet }} alt="Mars" className="hover:text-planet-white focus:text-planet-white border-t-4 border-transparent hover:border-planet-orange1 focus:border-planet-orange1">
           <h2 onMouseEnter={() => setPlanet({ planet: 'mars', number: 3 })}>Mars</h2>
         </Link>
-        <Link href={{ pathname: '/', query: planet }} alt="" className="hover:text-planet-white focus:text-planet-white border-t-4 border-transparent hover:border-planet-orange2 focus:border-planet-orange2">
+        <Link href={{ pathname: '/', query: planet }} alt="Jupiter" className="hover:text-planet-white focus:text-planet-white border-t-4 border-transparent hover:border-planet-orange2 focus:border-planet-orange2">
           <h2 onMouseEnter={() => setPlanet({ planet: 'jupiter', number: 4 })}>Jupiter</h2>
         </Link>
-        <Link href={{ pathname: '/', query: planet }} alt="" className="hover:text-planet-white focus:text-planet-white border-t-4 border-transparent hover:border-planet-orange3 focus:border-planet-orange3">
+        <Link href={{ pathname: '/', query: planet }} alt="Saturn" className="hover:text-planet-white focus:text-planet-white border-t-4 border-transparent hover:border-planet-orange3 focus:border-planet-orange3">
           <h2 onMouseEnter={() => setPlanet({ planet: 'saturn', number: 5 })}>Saturn</h2>
         </Link>
-        <Link href={{ pathname: '/', query: planet }} alt="" className="hover:text-planet-white focus:text-planet-white border-t-4 border-transparent hover:border-planet-aquagreen focus:border-planet-aquagreen">
+        <Link href={{ pathname: '/', query: planet }} alt="Uranus" className="hover:text-planet-white focus:text-planet-white border-t-4 border-transparent hover:border-planet-aquagreen focus:border-planet-aquagreen">
           <h2 onMouseEnter={() => setPlanet({ planet: 'uranus', number: 6 })}>Uranus</h2>
         </Link>
-        <Link href={{ pathname: '/', query: planet }} alt="" className="hover:text-planet-white focus:text-planet-white border-t-4 border-transparent hover:border-planet-blue focus:border-planet-blue">
+        <Link href={{ pathname: '/', query: planet }} alt="Neptune" className="hover:text-planet-white focus:text-planet-white border-t-4 border-transparent hover:border-planet-blue focus:border-planet-blue">
           <h2 onMouseEnter={() => setPlanet({ planet: 'neptune', number: 7 })}>neptune</h2>
         </Link>
 
@@ -67,35 +67,35 @@ const Navbar = () => {
       >
         <div className="md:hidden bg-planet-dark w-[100vw] h-[100vh] items-start flex flex-col -left-10 absolute justify-evenly pl-10 pr-10 pb-16">
 
-          <Link href={{ pathname: '/', query: planet }} onTouchStart={() => setPlanet({ planet: 'mercury', number: 0 })} className="w-full pl-4 border-b-planet-darkgray border-b-2 pb-8 hover:text-planet-white focus:text-planet-white border-l-4 border-transparent hover:border-planet-aquablue focus:border-planet-aquablue flex justify-between">
+          <Link href={{ pathname: '/', query: planet }} onTouchStart={() => setPlanet({ planet: 'mercury', number: 0 })} alt="Mercury" className="w-full pl-4 border-b-planet-darkgray border-b-2 pb-8 hover:text-planet-white focus:text-planet-white border-l-4 border-transparent hover:border-planet-aquablue focus:border-planet-aquablue flex justify-between">
             <h2 onMouseEnter={() => setPlanet({ planet: 'mercury', number: 0 })}>Mercury</h2>
             <Image src="icon-chevron.svg" alt="chevron" width="12" height="12" />
           </Link>
-          <Link href={{ pathname: '/', query: planet }} onTouchStart={() => setPlanet({ planet: 'venus', number: 1 })} alt="" className="w-full pl-4 border-b-planet-darkgray border-b-2 pb-8 hover:text-planet-white focus:text-planet-white border-l-4 border-transparent  hover:border-planet-gold focus:border-planet-gold flex justify-between">
+          <Link href={{ pathname: '/', query: planet }} onTouchStart={() => setPlanet({ planet: 'venus', number: 1 })} alt="Venus" className="w-full pl-4 border-b-planet-darkgray border-b-2 pb-8 hover:text-planet-white focus:text-planet-white border-l-4 border-transparent  hover:border-planet-gold focus:border-planet-gold flex justify-between">
             <h2 onMouseEnter={() => setPlanet({ planet: 'venus', number: 1 })}>Venus</h2>
             <Image src="icon-chevron.svg" alt="chevron" width="12" height="12" />
           </Link>
-          <Link href={{ pathname: '/', query: planet }} onTouchStart={() => setPlanet({ planet: 'earth', number: 2 })} alt="" className="w-full pl-4 border-b-planet-darkgray border-b-2 pb-8 hover:text-planet-white focus:text-planet-white border-l-4 border-transparent hover:border-planet-purple focus:border-planet-purple flex justify-between">
+          <Link href={{ pathname: '/', query: planet }} onTouchStart={() => setPlanet({ planet: 'earth', number: 2 })} alt="Earth" className="w-full pl-4 border-b-planet-darkgray border-b-2 pb-8 hover:text-planet-white focus:text-planet-white border-l-4 border-transparent hover:border-planet-purple focus:border-planet-purple flex justify-between">
             <h2 onMouseEnter={() => setPlanet({ planet: 'earth', number: 2 })}>Earth</h2>
             <Image src="icon-chevron.svg" alt="chevron" width="12" height="12" />
           </Link>
-          <Link href={{ pathname: '/', query: planet }} onTouchStart={() => setPlanet({ planet: 'mars', number: 3 })} alt="" className="w-full pl-4 border-b-planet-darkgray border-b-2 pb-8 hover:text-planet-white focus:text-planet-white border-l-4 border-transparent hover:border-planet-orange1 focus:border-planet-orange1 flex justify-between">
+          <Link href={{ pathname: '/', query: planet }} onTouchStart={() => setPlanet({ planet: 'mars', number: 3 })} alt="Mars" className="w-full pl-4 border-b-planet-darkgray border-b-2 pb-8 hover:text-planet-white focus:text-planet-white border-l-4 border-transparent hover:border-planet-orange1 focus:border-planet-orange1 flex justify-between">
             <h2 onMouseEnter={() => setPlanet({ planet: 'mars', number: 3 })}>Mars</h2>
             <Image src="icon-chevron.svg" alt="chevron" width="12" height="12" />
           </Link>
-          <Link href={{ pathname: '/', query: planet }} onTouchStart={() => setPlanet({ planet: 'jupiter', number: 4 })} alt="" className="w-full pl-4 border-b-planet-darkgray border-b-2 pb-8 hover:text-planet-white focus:text-planet-white border-l-4 border-transparent hover:border-planet-orange2 focus:border-planet-orange2 flex justify-between">
+          <Link href={{ pathname: '/', query: planet }} onTouchStart={() => setPlanet({ planet: 'jupiter', number: 4 })} alt="Jupiter" className="w-full pl-4 border-b-planet-darkgray border-b-2 pb-8 hover:text-planet-white focus:text-planet-white border-l-4 border-transparent hover:border-planet-orange2 focus:border-planet-orange2 flex justify-between">
             <h2 onMouseEnter={() => setPlanet({ planet: 'jupiter', number: 4 })}>Jupiter</h2>
             <Image src="icon-chevron.svg" alt="chevron" width="12" height="12" />
           </Link>
-          <Link href={{ pathname: '/', query: planet }} onTouchStart={() => setPlanet({ planet: 'saturn', number: 5 })} alt="" className="w-full pl-4 border-b-planet-darkgray border-b-2 pb-8 hover:text-planet-white focus:text-planet-white border-l-4 border-transparent hover:border-planet-orange3 focus:border-planet-orange3 flex justify-between">
+          <Link href={{ pathname: '/', query: planet }} onTouchStart={() => setPlanet({ planet: 'saturn', number: 5 })} alt="Saturn" className="w-full pl-4 border-b-planet-darkgray border-b-2 pb-8 hover:text-planet-white focus:text-planet-white border-l-4 border-transparent hover:border-planet-orange3 focus:border-planet-orange3 flex justify-between">
             <h2 onMouseEnter={() => setPlanet({ planet: 'saturn', number: 5 })}>Saturn</h2>
             <Image src="icon-chevron.svg" alt="chevron" width="12" height="12" />
           </Link>
-          <Link href={{ pathname: '/', query: planet }} onTouchStart={() => setPlanet({ planet: 'uranus', number: 6 })} alt="" className="w-full pl-4 border-b-planet-darkgray border-b-2 pb-8 hover:text-planet-white focus:text-planet-white border-l-4 border-transparent hover:border-planet-aquagreen focus:border-planet-aquagreen flex justify-between">
+          <Link href={{ pathname: '/', query: planet }} onTouchStart={() => setPlanet({ planet: 'uranus', number: 6 })} alt="Uranus" className="w-full pl-4 border-b-planet-darkgray border-b-2 pb-8 hover:text-planet-white focus:text-planet-white border-l-4 border-transparent hover:border-planet-aquagreen focus:border-planet-aquagreen flex justify-between">
             <h2 onMouseEnter={() => setPlanet({ planet: 'uranus', number: 6 })}>Uranus</h2>
             <Image src="icon-chevron.svg" alt="chevron" width="12" height="12" />
           </Link>
-          <Link href={{ pathname: '/', query: planet }} onTouchStart={() => setPlanet({ planet: 'neptune', number: 7 })} alt="" className="w-full pl-4 border-b-planet-darkgray border-b-2 pb-8 hover:text-planet-white focus:text-planet-white border-l-4 border-transparent hover:border-planet-blue focus:border-planet-blue flex justify-between ">
+          <Link href={{ pathname: '/', query: planet }} onTouchStart={() => setPlanet({ planet: 'neptune', number: 7 })} alt="Neptune" className="w-full pl-4 border-b-planet-darkgray border-b-2 pb-8 hover:text-planet-white focus:text-planet-white border-l-4 border-transparent hover:border-planet-blue focus:border-planet-blue flex justify-between ">
             <h2 onMouseEnter={() => setPlanet({ planet: 'neptune', number: 7 })}>neptune</h2>
             <Image src="icon-chevron.svg" alt="chevron" width="12" height="12" />
           </Link>

@@ -18,7 +18,7 @@ const Home = () => {
 
   useEffect(() => {
     // Always do navigations after the first render
-    router.push('/?planet=mercury&number=0', undefined, { shallow: true });
+    router.push('?planet=earth&number=2', undefined, { shallow: true });
   }, []);
 
   useEffect(() => {
